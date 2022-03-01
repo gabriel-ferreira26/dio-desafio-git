@@ -1,0 +1,55 @@
+/* Estilização geral */
+
+body {
+  margin: 0;
+  background-color: #cbeee2;
+}
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid */
+
+.genius {
+  display: grid;
+  grid-template-areas: 'green red' 'yellow blue';
+  grid-gap: 10px;
+  border: 1px solid #FFF;
+  background-color: #FFF;
+  border-radius: 100%;
+  width: 700px;
+  height: 700px;
+}
+
+.blue {
+  grid-area: blue;
+  background-color: rgb(100, 175, 204);
+  border-bottom-right-radius: 100%;
+}
+
+.red {
+  grid-area: red;
+  background-color: rgb(255, 0, 0);
+  border-top-right-radius: 100%;
+}
+
+.yellow {
+  grid-area: yellow;
+  background-color: rgb(255, 251, 0);
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  grid-area: green;
+  background-color: rgb(101, 209, 0);
+  border-top-left-radius: 100%;
+}
+
+.selected {
+  opacity: 0.4;
+}
